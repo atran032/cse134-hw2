@@ -42,7 +42,7 @@ fieldset
 legend
 input
 textarea
-
+article
 progress
 
 To Do:
@@ -52,5 +52,4 @@ span
 
 svg
 
-article
 dialog
