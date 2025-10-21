@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiments</title>
+
+  <style>
+    body {
+      border: 2px solid black;
+      margin: 10px;
+      padding: 10px;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Experiments Page</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education & Career</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="experiments.html">Experiments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Template Example -->
+    <section>
+      <h2>Template</h2>
+      <p>The <code>&lt;template&gt;</code> element holds HTML that isn’t displayed until used by a script. For now, it’s just here to show its structure.</p>
+
+      <template id="example-template">
+        <article>
+          <h3>Hidden Template Content</h3>
+          <p>This content is inside a template and not displayed on the page.</p>
+        </article>
+      </template>
+      <p>(You won’t see the template contents here — it’s intentionally hidden.)</p>
+    </section>
+
+    <!-- Picture Example -->
+    <section>
+      <h2>Picture</h2>
+      <p>This demonstrates responsive images using the <code>&lt;picture&gt;</code> element.</p>
+      <picture>
+        <source srcset="images/example-large.jpg" media="(min-width: 800px)">
+        <source srcset="images/example-medium.jpg" media="(min-width: 500px)">
+        <img src="images/example-small.jpg" alt="Example image at different resolutions" width="400">
+      </picture>
+    </section>
+
+    <!-- Audio Example -->
+    <section>
+      <h2>Audio</h2>
+      <p>An example audio clip with fallback text:</p>
+      <audio controls>
+        <source src="media/sample-audio.mp3" type="audio/mpeg">
+        <source src="media/sample-audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Video Example -->
+    <section>
+      <h2>Video</h2>
+      <p>A sample video player using multiple <code>&lt;source&gt;</code> formats for compatibility:</p>
+      <video controls width="480">
+        <source src="media/sample-video.mp4" type="video/mp4">
+        <source src="media/sample-video.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Canvas Example -->
+    <section>
+      <h2>Canvas</h2>
+      <p>This demonstrates a simple shape drawn using the <code>&lt;canvas&gt;</code> tag and a few lines of JavaScript.</p>
+      <canvas id="myCanvas" width="300" height="150" style="border:1px solid black;"></canvas>
+
+      <script>
+        // Minimal canvas demo (well under 15 lines)
+        const c = document.getElementById("myCanvas");
+        const ctx = c.getContext("2d");
+        ctx.fillStyle = "lightblue";
+        ctx.fillRect(10, 10, 100, 100);
+        ctx.strokeStyle = "navy";
+        ctx.lineWidth = 4;
+        ctx.strokeRect(10, 10, 100, 100);
+        ctx.fillStyle = "black";
+        ctx.font = "16px sans-serif";
+        ctx.fillText("Canvas Demo", 20, 80);
+      </script>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="index.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>
