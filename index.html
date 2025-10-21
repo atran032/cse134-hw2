@@ -7,6 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anthony Tran | Home</title>
   <link rel="stylesheet" href="style.css">
+
+  <script>
+    class HelloWorld extends HTMLElement {
+      constructor() {
+        super();
+        console.log("Hello world!");
+      }
+    }
+  
+    customElements.define("hello-world", HelloWorld);
+  </script>
 </head>
 <body>
   <header>
@@ -24,6 +35,7 @@
 
   <main>
     <section>
+      <hello-world></hello-world>
       <h2>Welcome!</h2>
       <p>Hello! I'm <strong>Anthony</strong>, a computer science undergraduate at UCSD. I'm currently developing this portfolio page as an exercise in <i>semantic</i> HTML. I have many skills and interests, which you can get to know throughout this website. Feel free to contact me with any queries!</p>
     </section>
@@ -38,11 +50,6 @@
       <img src="images/me_small.png" alt="My Avatar" width="200">
     </section>
 
-    <section>
-        <script>
-          // Placeholder for future analytics script
-        </script>
-    </section>
   </main>
 
   <footer>
