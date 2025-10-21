@@ -8,7 +8,8 @@ HTML
 head
 title
 meta
-
+link
+script
 body
 main
 h1
@@ -21,7 +22,7 @@ footer
 nav
 
 br
-
+button
 noscript
 b
 i
@@ -42,19 +43,14 @@ legend
 input
 textarea
 
-To Do:
+progress
 
-link
-script
-style
+To Do:
 
 div
 span
 
-button
-
 svg
 
 article
-progress
 dialog
